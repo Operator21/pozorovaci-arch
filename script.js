@@ -87,6 +87,12 @@ function space(size = 1) {
     }
 }
 
+function reset() {
+    inputs.forEach(input => {
+        input.value = "";
+    });
+}
+
 createInput("entry", "Číslo záznamu", "number").value = 1;
 
 space();
